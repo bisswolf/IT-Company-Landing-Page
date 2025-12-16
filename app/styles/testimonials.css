@@ -1,0 +1,71 @@
+/* Section spacing */
+.testimonials {
+  padding: 96px 0;
+}
+
+/* Grid layout */
+.testimonial-grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card */
+.testimonial-card {
+  position: relative;
+  background: white;
+  padding: 40px 32px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Quote accent */
+.testimonial-quote {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 80px;
+  color: var(--primary);
+  opacity: 0.12;
+  font-family: serif;
+}
+
+/* Text */
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+/* Author */
+.testimonial-author {
+  margin-top: 24px;
+}
+
+.testimonial-author strong {
+  display: block;
+  font-size: 15px;
+  color: var(--text-dark);
+}
+
+.testimonial-author span {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,4 @@
+
+.section-soft{background:var(--bg-light)}
+.section-accent{background:linear-gradient(180deg,#f0f9ff,#fff)}
+.section-dark{background:linear-gradient(135deg,var(--primary-dark),var(--primary));color:#fff}

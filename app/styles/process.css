@@ -1,0 +1,101 @@
+/* Section spacing */
+.how-it-works {
+  padding: 96px 0;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-top: 12px;
+  color: var(--text-muted);
+}
+
+/* Layout */
+.process-wrapper {
+  position: relative;
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Connecting line */
+.process-line {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  z-index: 0;
+}
+
+/* Card */
+.process-card {
+  position: relative;
+  background: white;
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+  z-index: 1;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Number badge */
+.process-number {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.process-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.process-card p {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .process-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-line {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
