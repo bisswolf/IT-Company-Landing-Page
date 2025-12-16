@@ -6,6 +6,7 @@ import "./styles/process.css";
 import "./styles/pills.css";
 import "./styles/testimonials.css";
 import "./styles/cta.css";
+import "./styles/mobile.css";
 
 export const metadata = {
   title: "IT Outsourcing & Software Development Services",

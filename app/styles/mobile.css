@@ -1,0 +1,134 @@
+/* =========================
+   MOBILE OPTIMIZATIONS
+   ========================= */
+@media (max-width: 768px) {
+  /* Global spacing */
+  section {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  /* -------------------------
+     HERO
+     ------------------------- */
+  .hero {
+    padding-top: 56px;
+    padding-bottom: 64px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .hero-actions button {
+    width: 100%;
+  }
+
+  .hero-mock {
+    display: none; /* Hide decorative visual on mobile */
+  }
+
+  /* -------------------------
+     CARDS (Services, Why Us)
+     ------------------------- */
+  .grid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .service-card.featured {
+    transform: none;
+  }
+
+  /* -------------------------
+     HOW IT WORKS
+     ------------------------- */
+  .process-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-card {
+    padding: 24px;
+  }
+
+  .process-number {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  /* -------------------------
+     INDUSTRIES
+     ------------------------- */
+  .pill {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* -------------------------
+     TESTIMONIALS
+     ------------------------- */
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .testimonial-card {
+    padding: 28px 24px;
+  }
+
+  .testimonial-quote {
+    font-size: 64px;
+    top: -16px;
+  }
+
+  /* -------------------------
+     CTA
+     ------------------------- */
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-points {
+    margin: 16px 0 24px;
+  }
+
+  .cta button {
+    width: 100%;
+  }
+
+  /* -------------------------
+     FOOTER
+     ------------------------- */
+  footer {
+    padding: 56px 0;
+    text-align: center;
+  }
+}
