@@ -1,3 +1,32 @@
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 36px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e5e7eb;
+  transition: 0.25s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+.service-card {
+  position: relative;
+}
 
-.card{background:#fff;border-radius:var(--radius);padding:36px;box-shadow:var(--shadow-sm);border:1px solid #e5e7eb;transition:.25s}
-.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--primary)}
+.service-card.featured {
+  border: 2px solid var(--primary);
+  transform: scale(1.03);
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+}

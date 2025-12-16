@@ -5,15 +5,31 @@ import { Stagger, FadeItem } from "./ui/Motion";
 import { motion } from "framer-motion";
 
 const services = [
-  { title: "Web & Mobile Development", desc: "Modern scalable applications." },
+  {
+    title: "Web & Mobile Development",
+    desc: "From MVP to enterprise-scale applications.",
+    featured: true,
+  },
   {
     title: "Dedicated Development Teams",
-    desc: "Extend your team with experts.",
+    desc: "Extend your team with vetted engineers.",
   },
-  { title: "Cloud & DevOps Services", desc: "Secure cloud infrastructure." },
-  { title: "Data Analytics & AI", desc: "Turn data into insights." },
-  { title: "QA & Testing", desc: "Enterprise-grade quality assurance." },
-  { title: "Cyber Security", desc: "Secure your systems." },
+  {
+    title: "Cloud & DevOps Services",
+    desc: "Secure, scalable cloud infrastructure.",
+  },
+  {
+    title: "Data Analytics & AI",
+    desc: "Turn data into actionable insights.",
+  },
+  {
+    title: "QA & Testing",
+    desc: "Enterprise-grade quality assurance.",
+  },
+  {
+    title: "Cyber Security",
+    desc: "Secure your enterprise with our solutions",
+  },
 ];
 
 export default function Services() {
@@ -45,8 +61,16 @@ export default function Services() {
                     border: "1px solid var(--border)",
                   }}
                 >
-                  <h4>{s.title}</h4>
-                  <p>{s.desc}</p>
+                  <div
+                    key={s.title}
+                    className={`card service-card ${
+                      s.featured ? "featured" : ""
+                    }`}
+                  >
+                    {s.featured && <span className="badge">Most Popular</span>}
+                    <h4>{s.title}</h4>
+                    <p>{s.desc}</p>
+                  </div>
                 </motion.div>
               </FadeItem>
             ))}

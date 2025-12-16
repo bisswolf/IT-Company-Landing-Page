@@ -16,9 +16,12 @@ export default function CTA() {
           <h2 style={{ fontSize: 42 }}>
             Let’s Build Your Next Digital Product
           </h2>
-          <p style={{ marginTop: 12, color: "#dbeafe", fontSize: 14 }}>
-            No obligation • 100% confidential • Free consultation
-          </p>
+
+          <ul className="cta-points">
+            <li>✔ Free consultation</li>
+            <li>✔ No obligation</li>
+            <li>✔ Response within 24 hours</li>
+          </ul>
 
           <div style={{ marginTop: 32 }}>
             <Button>Schedule Free Consultation</Button>

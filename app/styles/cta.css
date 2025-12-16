@@ -1,0 +1,10 @@
+.cta-points {
+  margin: 24px 0 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.cta-points li {
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
